@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="col" id="left-sidebar">
+            <div class="upper">
+                <div class="contact">
+                    <i class="fas fa-id-card-alt fa-2x"></i>
+                </div>
+                <div class="Outbound">
+                    <i class="far fa-paper-plane fa-2x"></i>
+                </div>
+                <div class="Inbox">
+                    <i class="fas fa-envelope-open-text fa-2x"></i>
+                </div>
+                <div class="Email prospects">
+                    <i class="fas fa-mail-bulk fa-2x"></i>
+                </div>
+                <div class="Automation">
+                    <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect y="0.272736" width="40" height="40" fill="url(#pattern0)"/>
+                        <defs>
+                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use xlink:href="#image0" transform="scale(0.00666667)"/>
+                        </pattern>
+                        <image id="image0" width="150" height="150" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAYAAAA8AXHiAAAACXBIWXMAAC4jAAAuIwF4pT92AAAFFmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNi4wLWMwMDIgNzkuMTY0NDYwLCAyMDIwLzA1LzEyLTE2OjA0OjE3ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgMjEuMiAoV2luZG93cykiIHhtcDpDcmVhdGVEYXRlPSIyMDIwLTExLTA0VDIyOjA1OjI3KzA1OjMwIiB4bXA6TW9kaWZ5RGF0ZT0iMjAyMC0xMS0wNFQyMjowODoxNiswNTozMCIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAyMC0xMS0wNFQyMjowODoxNiswNTozMCIgZGM6Zm9ybWF0PSJpbWFnZS9wbmciIHBob3Rvc2hvcDpDb2xvck1vZGU9IjMiIHBob3Rvc2hvcDpJQ0NQcm9maWxlPSJzUkdCIElFQzYxOTY2LTIuMSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo0YTVkYjY4MC1lNTRlLTFm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"/>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="Report">
+                    <i class="far fa-file fa-2x"></i>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="list1 Billing">
+                    <i class="fa fa-calculator fa-2x"></i>
+                </div>
+                <div class="list1 Integration">
+                    <i class="fa fa-dolly-flatbed fa-lg"></i>
+                </div>
+                <div class="list1 Notification">
+                    <i class="far fa-bell fa-2x"></i>
+                </div>
+                <div id="theImageContainer">
+                    <img id="user" src="Chicken_icon_05.svg.png">
+                </div>
+                <span class="dot" id="dot1" style="display: inline-block;"></span>
+            </div>
+        </div>
+        <div id="sidebar">
+            <div class="row">
+                <div class="header">Prospector</div>
+                <input placeholder="Search for a table or segment">
+                <div id="segments">
+                    <header>SEGMENTS</header>
+                    <div id="segments-list">
+                        <div>
+                            <svg width="18" height="20" viewBox="0 0 18 20" fill="none" style="margin-right: 10px; margin-bottom: 5px;">
+                                <path d="M10.0617 9.03383L11.1752 3.02188C11.6776 0.869077 9.59385 0.240188 9.05991 2.52824L8.04363 7.87152C7.82305 8.86619 7.51985 9.29969 7.13471 9.47299C6.47363 9.77052 5.86519 8.80441 5.58085 8.13752L4.11066 4.68947C3.21171 2.73719 1.40457 3.65294 2.12799 5.45138L4.14977 10.0398L3.79194 9.21541L2.91324 7.18947C2.14069 5.56038 0.482685 6.21141 1.02088 7.82599C1.02088 7.82599 2.22469 10.7878 2.5776 11.793C3.03774 13.1037 3.50843 15.9101 4.22663 17.0991C5.78949 19.6866 9.95121 19.3516 11.9672 17.0991C12.534 16.4659 13.533 15.0861 14.0906 14.4448C14.8652 13.5538 16.8921 11.2406 16.8921 11.2406C17.2985 10.6411 16.9833 9.71455 16.6697 9.94269L12.5892 11.44C12.309 11.5342 12.1264 11.3123 12.0086 11.1356C11.9227 11.0068 12.0331 10.5653 12.066 10.366C12.4548 8.19552 12.8435 6.02508 13.2324 3.85461C13.5643 2.20102 11.533 1.59338 11.1283 3.29533" fill="#FCEA2B" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                             Segment 1
+                        </div>
+                        <div>
+                            <img width="15" src="Chicken_icon_05.svg.png" style="margin-right: 10px; margin-bottom: 5px;">
+                             Segment 2
+                        </div>
+                        <div>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" style="margin-right: 6px; margin-bottom: 5px;">
+                                <g clip-path="url(#clip0)">
+                                <path d="M12.0216 5.70022C12.0981 5.52083 12.423 4.7865 12.5536 4.62811C13.2737 3.75486 14.6481 3.69916 14.6481 3.69916C14.6481 3.69916 14.854 5.05927 14.1346 5.93219C13.94 6.16811 13.6977 6.34433 13.4476 6.47594L12.9296 6.71194C13.1565 6.591 13.9268 6.25808 14.2003 6.22394C15.3234 6.08377 16.3607 6.98722 16.3607 6.98722C16.3607 6.98722 15.5763 8.11727 14.4538 8.25766C14.036 8.30975 13.63 8.21741 13.2849 8.08091L12.8648 7.92472C13.1626 8.03586 13.8773 8.35858 14.1217 8.60805C14.9139 9.41647 14.824 10.7891 14.824 10.7891C14.824 10.7891 13.4497 10.85 12.6578 10.0423C12.483 9.86386 12.134 8.99336 12.0347 8.7808L12.2477 9.44672C12.314 9.64461 12.3567 9.85625 12.3607 10.0767C12.3813 11.2084 11.3733 12.1443 11.3733 12.1443C11.3733 12.1443 10.3325 11.2448 10.3116 10.1138C10.3074 9.88211 10.6857 8.80675 10.6857 8.80675L10.3692 9.53508C9.877 10.2263 9.11486 10.686 8.27061 10.7708C8.01355 10.7967 7.8418 10.7891 7.8418 10.7891C7.8418 10.7891 7.75186 9.41647 8.54405 8.60805C8.77425 8.37314 9.05358 8.21169 9.33405 8.10086L9.80933 7.90341C9.80828 7.90383 8.61097 8.30741 8.21192 8.25766C7.08947 8.11727 6.30505 6.98722 6.30505 6.98722C6.30505 6.98722 7.3423 6.08377 8.46547 6.22394C8.698 6.25297 9.53289 6.66227 9.73236 6.75733L9.1185 6.4208C8.90419 6.29622 8.69972 6.13661 8.53111 5.93219C7.81166 5.05927 8.01761 3.69916 8.01761 3.69916C8.01761 3.69916 9.39203 3.75486 10.1121 4.62808C10.2514 4.79694 10.6271 5.52133 10.7052 5.71319L10.4524 5.17419C10.3706 4.9543 10.3162 4.71597 10.3116 4.46636C10.2912 3.3348 11.2991 2.39877 11.2991 2.39877C11.2991 2.39877 12.3401 3.29763 12.3607 4.4293C12.3653 4.67838 12.32 4.91797 12.2466 5.14019" fill="#FCEA2B"/>
+                                <path d="M11.3313 8.66025C12.0983 8.66025 12.7202 8.03843 12.7202 7.27137C12.7202 6.5043 12.0983 5.88248 11.3313 5.88248C10.5642 5.88248 9.94238 6.5043 9.94238 7.27137C9.94238 8.03843 10.5642 8.66025 11.3313 8.66025Z" fill="#F1B31C"/>
+                                <path d="M6.49024 10.824C7.1413 11.6209 6.94771 12.8565 6.94771 12.8565C6.94771 12.8565 5.69844 12.7999 5.04719 12.003C4.39594 11.2061 4.58972 9.97055 4.58972 9.97055C4.58972 9.97055 5.83919 10.0278 6.49024 10.824Z" fill="#5C9E31"/>
+                                <path d="M10.1816 14.5837C10.9753 13.9351 12.2061 14.128 12.2061 14.128C12.2061 14.128 12.1497 15.3724 11.3559 16.0211C10.5622 16.6698 9.33142 16.4768 9.33142 16.4768C9.33142 16.4768 9.38845 15.2322 10.1816 14.5837Z" fill="#5C9E31"/>
+                                <path d="M12.7548 9.93396C13.6779 9.93396 14.4262 9.18564 14.4262 8.26254C14.4262 7.33944 13.6779 6.59113 12.7548 6.59113C11.8317 6.59113 11.0834 7.33944 11.0834 8.26254C11.0834 9.18564 11.8317 9.93396 12.7548 9.93396Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7.09409 12.403C8.02657 13.5443 7.74928 15.3139 7.74928 15.3139C7.74928 15.3139 5.96003 15.2329 5.02732 14.0916C4.0946 12.9503 4.37212 11.1807 4.37212 11.1807C4.37212 11.1807 6.16161 11.2626 7.09409 12.403Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M13.5856 6.3718C13.6776 6.15592 14.0686 5.2722 14.2258 5.0816C15.0924 4.03071 16.7464 3.96369 16.7464 3.96369C16.7464 3.96369 16.9942 5.60047 16.1284 6.65096C15.8943 6.93486 15.6026 7.14693 15.3016 7.30532L14.6783 7.58932C14.9513 7.44378 15.8783 7.04314 16.2074 7.00205C17.5591 6.83337 18.8073 7.9206 18.8073 7.9206C18.8073 7.9206 17.8633 9.28053 16.5126 9.44947C16.0097 9.51215 15.5212 9.40104 15.1058 9.23677L14.6003 9.0488C14.9587 9.18255 15.8187 9.57092 16.1129 9.87114C17.0663 10.844 16.958 12.4958 16.958 12.4958C16.958 12.4958 15.3042 12.5691 14.3512 11.5971C14.1408 11.3824 13.7209 10.3348 13.6013 10.079L13.8577 10.8804C13.9374 11.1186 13.9888 11.3732 13.9937 11.6386C14.0185 13.0004 12.8054 14.1267 12.8054 14.1267C12.8054 14.1267 11.5529 13.0442 11.5277 11.6832C11.5227 11.4044 11.978 10.1103 11.978 10.1103L11.597 10.9867C11.0047 11.8186 10.0876 12.3718 9.07157 12.4739C8.76222 12.505 8.55553 12.4958 8.55553 12.4958C8.55553 12.4958 8.44729 10.844 9.40063 9.87114C9.67765 9.58844 10.0138 9.39415 10.3513 9.26077L10.9233 9.02316C10.922 9.02366 9.48116 9.50934 9.00093 9.44947C7.65016 9.28053 6.70618 7.9206 6.70618 7.9206C6.70618 7.9206 7.95442 6.83337 9.30606 7.00205C9.58589 7.03699 10.5906 7.52955 10.8307 7.64394L10.0919 7.23896C9.83403 7.08903 9.58797 6.89695 9.38506 6.65096C8.51926 5.60047 8.7671 3.96369 8.7671 3.96369C8.7671 3.96369 10.4211 4.03071 11.2877 5.08156C11.4553 5.28477 11.9074 6.15652 12.0014 6.38741L11.6971 5.73876C11.5987 5.47415 11.5333 5.18733 11.5278 4.88694C11.5031 3.52521 12.7161 2.39877 12.7161 2.39877C12.7161 2.39877 13.9689 3.48048 13.9937 4.84235C13.9992 5.1421 13.9447 5.43042 13.8563 5.69785" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M11.2334 16.8938C12.3748 15.9614 14.1444 16.2386 14.1444 16.2386C14.1444 16.2386 14.0633 18.0279 12.922 18.9606C11.7807 19.8933 10.0111 19.6158 10.0111 19.6158C10.0111 19.6158 10.0931 17.8263 11.2334 16.8938Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10.6066 13.2274C9.45731 14.4134 8.04062 16.6525 8.65804 20.1587" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0">
+                                <rect width="20" height="20" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                            Segment 3
+                        </div>
+                        <div>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" style="margin-right: 6px; margin-bottom: 5px;">
+                                <path d="M14.5544 10.5556C14.8322 8.33333 12.6889 6.94444 10.3877 6.94444C8.08658 6.94444 5.95094 9.10555 5.66552 11.3889C5.38774 13.6111 7.80877 15.8333 10.11 15.8333C12.4112 15.8333 14.269 12.8389 14.5544 10.5556Z" fill="#EA5A47"/>
+                                <path d="M10.11 6.94444C12.8878 6.66666 13.9989 8.33333 13.9989 8.33333L10.11 6.94444Z" fill="#EA5A47"/>
+                                <path d="M14.5545 9.16667C15.9075 13.767 11.3281 17.5341 10.11 17.7778C8.72114 18.0556 6.49891 14.7222 5.94336 13.3333" fill="#EA5A47"/>
+                                <path d="M12.61 11.8056C12.6099 10.8465 12.355 9.90471 11.8713 9.07657C11.3876 8.24844 10.6925 7.56372 9.85723 7.09252C10.1139 6.98918 10.3889 6.93881 10.6656 6.94444C12.9668 6.94444 14.8322 8.33333 14.5545 10.5556C14.2425 13.0515 13.7211 16.6667 10.11 17.7778C9.58553 17.9391 8.935 17.3134 8.71973 17.0004C9.84224 16.6708 10.8279 15.9866 11.5291 15.0502C12.2304 14.1138 12.6096 12.9754 12.61 11.8056Z" fill="#D22F27"/>
+                                <path d="M5.66553 12.5C5.66553 12.5 3.43681 7.04203 10.11 6.94444L5.66553 12.5Z" fill="#EA5A47"/>
+                                <path d="M7.05446 10.2778C7.36128 10.2778 7.61001 10.0291 7.61001 9.72223C7.61001 9.4154 7.36128 9.16667 7.05446 9.16667C6.74763 9.16667 6.4989 9.4154 6.4989 9.72223C6.4989 10.0291 6.74763 10.2778 7.05446 10.2778Z" fill="#D22F27"/>
+                                <path d="M9.27663 10.2778C9.58345 10.2778 9.83218 10.0291 9.83218 9.72223C9.83218 9.4154 9.58345 9.16667 9.27663 9.16667C8.9698 9.16667 8.72107 9.4154 8.72107 9.72223C8.72107 10.0291 8.9698 10.2778 9.27663 10.2778Z" fill="#D22F27"/>
+                                <path d="M11.2211 10.2778C11.5279 10.2778 11.7766 10.0291 11.7766 9.72223C11.7766 9.4154 11.5279 9.16667 11.2211 9.16667C10.9143 9.16667 10.6655 9.4154 10.6655 9.72223C10.6655 10.0291 10.9143 10.2778 11.2211 10.2778Z" fill="#D22F27"/>
+                                <path d="M13.1655 10.2778C13.4724 10.2778 13.7211 10.0291 13.7211 9.72223C13.7211 9.4154 13.4724 9.16667 13.1655 9.16667C12.8587 9.16667 12.61 9.4154 12.61 9.72223C12.61 10.0291 12.8587 10.2778 13.1655 10.2778Z" fill="#D22F27"/>
+                                <path d="M12.3322 12.5C12.639 12.5 12.8877 12.2513 12.8877 11.9444C12.8877 11.6376 12.639 11.3889 12.3322 11.3889C12.0253 11.3889 11.7766 11.6376 11.7766 11.9444C11.7766 12.2513 12.0253 12.5 12.3322 12.5Z" fill="#D22F27"/>
+                                <path d="M10.11 12.5C10.4168 12.5 10.6656 12.2513 10.6656 11.9444C10.6656 11.6376 10.4168 11.3889 10.11 11.3889C9.80317 11.3889 9.55444 11.6376 9.55444 11.9444C9.55444 12.2513 9.80317 12.5 10.11 12.5Z" fill="#D22F27"/>
+                                <path d="M7.88771 12.5C8.19453 12.5 8.44326 12.2513 8.44326 11.9444C8.44326 11.6376 8.19453 11.3889 7.88771 11.3889C7.58088 11.3889 7.33215 11.6376 7.33215 11.9444C7.33215 12.2513 7.58088 12.5 7.88771 12.5Z" fill="#D22F27"/>
+                                <path d="M8.99892 15C9.30574 15 9.55447 14.7513 9.55447 14.4444C9.55447 14.1376 9.30574 13.8889 8.99892 13.8889C8.69209 13.8889 8.44336 14.1376 8.44336 14.4444C8.44336 14.7513 8.69209 15 8.99892 15Z" fill="#D22F27"/>
+                                <path d="M11.2211 15C11.5279 15 11.7766 14.7513 11.7766 14.4444C11.7766 14.1376 11.5279 13.8889 11.2211 13.8889C10.9143 13.8889 10.6655 14.1376 10.6655 14.4444C10.6655 14.7513 10.9143 15 11.2211 15Z" fill="#D22F27"/>
+                                <path d="M8.99919 2.96044C9.01708 2.91541 9.03586 2.87026 9.05552 2.825C9.19412 2.50903 9.37414 2.21292 9.59086 1.94444C10.1408 2.49733 10.512 3.20256 10.6566 3.96884C10.8012 4.73512 10.7123 5.52715 10.4017 6.24239C10.2606 6.56694 8.87028 6.14683 8.53308 6.16486" fill="#186648"/>
+                                <path d="M9.73643 5.81475C9.7692 6.15822 9.75612 6.50452 9.69754 6.84453C8.77641 6.58311 7.98462 5.99005 7.47471 5.17961C6.9648 4.36917 6.77287 3.3987 6.93587 2.45517C7.68538 2.67041 8.35301 3.1057 8.85232 3.70468C9.35163 4.30366 9.65963 5.03874 9.73643 5.81475Z" fill="#B1CC33"/>
+                                <path d="M12.781 2.96286C12.7738 2.79268 12.756 2.62311 12.7275 2.45517C11.8064 2.71658 11.0146 3.30963 10.5047 4.12005C9.99482 4.93048 9.80289 5.90094 9.96591 6.84445C10.7154 6.62921 11.383 6.19393 11.8823 5.59496C12.3816 4.996 12.6896 4.26094 12.7664 3.48495" fill="#B1CC33"/>
+                                <path d="M12.2125 3.02661C12.2124 2.90181 12.2058 2.7771 12.1928 2.65298C12.366 2.57404 12.5447 2.50792 12.7276 2.45517C12.756 2.62312 12.7739 2.79268 12.7811 2.96286L12.7665 3.48509C12.6897 4.26105 12.3817 4.99608 11.8824 5.59502C11.3831 6.19395 10.7155 6.62921 9.96599 6.84445C9.93909 6.68411 9.92179 6.52232 9.91418 6.35992C10.5898 6.10248 11.1713 5.64592 11.5817 5.05069C11.9921 4.45546 12.2121 3.74962 12.2125 3.02661Z" fill="#5C9E31"/>
+                                <path d="M10.4115 7.25843C13.3637 6.9632 14.5446 8.73453 14.5446 8.73453" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5.68798 13.1629C5.68798 13.1629 3.3193 7.36213 10.4115 7.25842" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7.10388 10.3583V9.76324" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.4657 10.3583V9.76324" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M11.5322 10.3583V9.76324" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M13.5988 10.3583V9.76324" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12.7131 12.72V12.125" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10.3514 12.72V12.125" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7.98962 12.72V12.125" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.17041 15.377V14.782" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M11.5322 15.377V14.782" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M15.135 9.62022C16.573 14.5094 11.7061 18.5132 10.4115 18.7721C8.93537 19.0673 6.5736 15.5247 5.98315 14.0485" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10.4115 7.25843C13.3637 6.9632 14.5446 8.73453 14.5446 8.73453" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.23108 3.02425C9.25009 2.97638 9.27005 2.9284 9.29095 2.8803C9.43825 2.54449 9.62958 2.22977 9.8599 1.94444C10.4167 2.50592 10.8019 3.21445 10.9704 3.98702" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10.0146 6.0578C10.0494 6.42283 10.0355 6.79088 9.97327 7.15225C8.9943 6.87441 8.15279 6.24411 7.61086 5.38277C7.06893 4.52144 6.86494 3.49002 7.03818 2.48724C7.83476 2.716 8.54431 3.17863 9.07498 3.81522C9.60564 4.45182 9.93298 5.23306 10.0146 6.0578V6.0578Z" stroke="black" stroke-linejoin="round"/>
+                                <path d="M13.2505 3.02682C13.2429 2.84595 13.2239 2.66573 13.1937 2.48724C12.2147 2.76507 11.3732 3.39536 10.8313 4.25668C10.2894 5.118 10.0854 6.1494 10.2587 7.15216C11.0552 6.9234 11.7647 6.46079 12.2954 5.82421C12.8261 5.18763 13.1534 4.40641 13.235 3.58169" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M13.2505 3.02682C13.2429 2.84595 13.2239 2.66573 13.1937 2.48724C12.2147 2.76507 11.3732 3.39536 10.8313 4.25668C10.2894 5.118 10.0854 6.1494 10.2587 7.15216C11.0552 6.9234 11.7647 6.46079 12.2954 5.82421C12.8261 5.18763 13.1534 4.40641 13.235 3.58169" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7.10388 10.3583V9.76324" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.4657 10.3583V9.76324" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M11.5322 10.3583V9.76324" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M13.5988 10.3583V9.76324" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12.7131 12.72V12.125" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10.3514 12.72V12.125" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7.98962 12.72V12.125" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.17041 15.377V14.782" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M11.5322 15.377V14.782" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M15.135 9.62022C16.573 14.5094 11.7061 18.5132 10.4115 18.7721C8.93537 19.0673 6.5736 15.5247 5.98315 14.0485" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10.4115 7.25843C13.3637 6.9632 14.5446 8.73453 14.5446 8.73453" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                             Segment 4
+                        </div>
+                        <div>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" style="margin-right: 6px; margin-bottom: 5px;">
+                                <path d="M14.5544 10.5556C14.8322 8.33333 12.6889 6.94444 10.3877 6.94444C8.08658 6.94444 5.95094 9.10555 5.66552 11.3889C5.38774 13.6111 7.80877 15.8333 10.11 15.8333C12.4112 15.8333 14.269 12.8389 14.5544 10.5556Z" fill="#EA5A47"/>
+                                <path d="M10.11 6.94444C12.8878 6.66666 13.9989 8.33333 13.9989 8.33333L10.11 6.94444Z" fill="#EA5A47"/>
+                                <path d="M14.5545 9.16667C15.9075 13.767 11.3281 17.5341 10.11 17.7778C8.72114 18.0556 6.49891 14.7222 5.94336 13.3333" fill="#EA5A47"/>
+                                <path d="M12.61 11.8056C12.6099 10.8465 12.355 9.90471 11.8713 9.07657C11.3876 8.24844 10.6925 7.56372 9.85723 7.09252C10.1139 6.98918 10.3889 6.93881 10.6656 6.94444C12.9668 6.94444 14.8322 8.33333 14.5545 10.5556C14.2425 13.0515 13.7211 16.6667 10.11 17.7778C9.58553 17.9391 8.935 17.3134 8.71973 17.0004C9.84224 16.6708 10.8279 15.9866 11.5291 15.0502C12.2304 14.1138 12.6096 12.9754 12.61 11.8056Z" fill="#D22F27"/>
+                                <path d="M5.66553 12.5C5.66553 12.5 3.43681 7.04203 10.11 6.94444L5.66553 12.5Z" fill="#EA5A47"/>
+                                <path d="M7.05446 10.2778C7.36128 10.2778 7.61001 10.0291 7.61001 9.72223C7.61001 9.4154 7.36128 9.16667 7.05446 9.16667C6.74763 9.16667 6.4989 9.4154 6.4989 9.72223C6.4989 10.0291 6.74763 10.2778 7.05446 10.2778Z" fill="#D22F27"/>
+                                <path d="M9.27663 10.2778C9.58345 10.2778 9.83218 10.0291 9.83218 9.72223C9.83218 9.4154 9.58345 9.16667 9.27663 9.16667C8.9698 9.16667 8.72107 9.4154 8.72107 9.72223C8.72107 10.0291 8.9698 10.2778 9.27663 10.2778Z" fill="#D22F27"/>
+                                <path d="M11.2211 10.2778C11.5279 10.2778 11.7766 10.0291 11.7766 9.72223C11.7766 9.4154 11.5279 9.16667 11.2211 9.16667C10.9143 9.16667 10.6655 9.4154 10.6655 9.72223C10.6655 10.0291 10.9143 10.2778 11.2211 10.2778Z" fill="#D22F27"/>
+                                <path d="M13.1655 10.2778C13.4724 10.2778 13.7211 10.0291 13.7211 9.72223C13.7211 9.4154 13.4724 9.16667 13.1655 9.16667C12.8587 9.16667 12.61 9.4154 12.61 9.72223C12.61 10.0291 12.8587 10.2778 13.1655 10.2778Z" fill="#D22F27"/>
+                                <path d="M12.3322 12.5C12.639 12.5 12.8877 12.2513 12.8877 11.9444C12.8877 11.6376 12.639 11.3889 12.3322 11.3889C12.0253 11.3889 11.7766 11.6376 11.7766 11.9444C11.7766 12.2513 12.0253 12.5 12.3322 12.5Z" fill="#D22F27"/>
+                                <path d="M10.11 12.5C10.4168 12.5 10.6656 12.2513 10.6656 11.9444C10.6656 11.6376 10.4168 11.3889 10.11 11.3889C9.80317 11.3889 9.55444 11.6376 9.55444 11.9444C9.55444 12.2513 9.80317 12.5 10.11 12.5Z" fill="#D22F27"/>
+                                <path d="M7.88771 12.5C8.19453 12.5 8.44326 12.2513 8.44326 11.9444C8.44326 11.6376 8.19453 11.3889 7.88771 11.3889C7.58088 11.3889 7.33215 11.6376 7.33215 11.9444C7.33215 12.2513 7.58088 12.5 7.88771 12.5Z" fill="#D22F27"/>
+                                <path d="M8.99892 15C9.30574 15 9.55447 14.7513 9.55447 14.4444C9.55447 14.1376 9.30574 13.8889 8.99892 13.8889C8.69209 13.8889 8.44336 14.1376 8.44336 14.4444C8.44336 14.7513 8.69209 15 8.99892 15Z" fill="#D22F27"/>
+                                <path d="M11.2211 15C11.5279 15 11.7766 14.7513 11.7766 14.4444C11.7766 14.1376 11.5279 13.8889 11.2211 13.8889C10.9143 13.8889 10.6655 14.1376 10.6655 14.4444C10.6655 14.7513 10.9143 15 11.2211 15Z" fill="#D22F27"/>
+                                <path d="M8.99919 2.96044C9.01708 2.91541 9.03586 2.87026 9.05552 2.825C9.19412 2.50903 9.37414 2.21292 9.59086 1.94444C10.1408 2.49733 10.512 3.20256 10.6566 3.96884C10.8012 4.73512 10.7123 5.52715 10.4017 6.24239C10.2606 6.56694 8.87028 6.14683 8.53308 6.16486" fill="#186648"/>
+                                <path d="M9.73643 5.81475C9.7692 6.15822 9.75612 6.50452 9.69754 6.84453C8.77641 6.58311 7.98462 5.99005 7.47471 5.17961C6.9648 4.36917 6.77287 3.3987 6.93587 2.45517C7.68538 2.67041 8.35301 3.1057 8.85232 3.70468C9.35163 4.30366 9.65963 5.03874 9.73643 5.81475Z" fill="#B1CC33"/>
+                                <path d="M12.781 2.96286C12.7738 2.79268 12.756 2.62311 12.7275 2.45517C11.8064 2.71658 11.0146 3.30963 10.5047 4.12005C9.99482 4.93048 9.80289 5.90094 9.96591 6.84445C10.7154 6.62921 11.383 6.19393 11.8823 5.59496C12.3816 4.996 12.6896 4.26094 12.7664 3.48495" fill="#B1CC33"/>
+                                <path d="M12.2125 3.02661C12.2124 2.90181 12.2058 2.7771 12.1928 2.65298C12.366 2.57404 12.5447 2.50792 12.7276 2.45517C12.756 2.62312 12.7739 2.79268 12.7811 2.96286L12.7665 3.48509C12.6897 4.26105 12.3817 4.99608 11.8824 5.59502C11.3831 6.19395 10.7155 6.62921 9.96599 6.84445C9.93909 6.68411 9.92179 6.52232 9.91418 6.35992C10.5898 6.10248 11.1713 5.64592 11.5817 5.05069C11.9921 4.45546 12.2121 3.74962 12.2125 3.02661Z" fill="#5C9E31"/>
+                                <path d="M10.4115 7.25843C13.3637 6.9632 14.5446 8.73453 14.5446 8.73453" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5.68798 13.1629C5.68798 13.1629 3.3193 7.36213 10.4115 7.25842" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7.10388 10.3583V9.76324" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.4657 10.3583V9.76324" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M11.5322 10.3583V9.76324" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M13.5988 10.3583V9.76324" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12.7131 12.72V12.125" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10.3514 12.72V12.125" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7.98962 12.72V12.125" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.17041 15.377V14.782" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M11.5322 15.377V14.782" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M15.135 9.62022C16.573 14.5094 11.7061 18.5132 10.4115 18.7721C8.93537 19.0673 6.5736 15.5247 5.98315 14.0485" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10.4115 7.25843C13.3637 6.9632 14.5446 8.73453 14.5446 8.73453" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.23108 3.02425C9.25009 2.97638 9.27005 2.9284 9.29095 2.8803C9.43825 2.54449 9.62958 2.22977 9.8599 1.94444C10.4167 2.50592 10.8019 3.21445 10.9704 3.98702" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10.0146 6.0578C10.0494 6.42283 10.0355 6.79088 9.97327 7.15225C8.9943 6.87441 8.15279 6.24411 7.61086 5.38277C7.06893 4.52144 6.86494 3.49002 7.03818 2.48724C7.83476 2.716 8.54431 3.17863 9.07498 3.81522C9.60564 4.45182 9.93298 5.23306 10.0146 6.0578V6.0578Z" stroke="black" stroke-linejoin="round"/>
+                                <path d="M13.2505 3.02682C13.2429 2.84595 13.2239 2.66573 13.1937 2.48724C12.2147 2.76507 11.3732 3.39536 10.8313 4.25668C10.2894 5.118 10.0854 6.1494 10.2587 7.15216C11.0552 6.9234 11.7647 6.46079 12.2954 5.82421C12.8261 5.18763 13.1534 4.40641 13.235 3.58169" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M13.2505 3.02682C13.2429 2.84595 13.2239 2.66573 13.1937 2.48724C12.2147 2.76507 11.3732 3.39536 10.8313 4.25668C10.2894 5.118 10.0854 6.1494 10.2587 7.15216C11.0552 6.9234 11.7647 6.46079 12.2954 5.82421C12.8261 5.18763 13.1534 4.40641 13.235 3.58169" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7.10388 10.3583V9.76324" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.4657 10.3583V9.76324" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M11.5322 10.3583V9.76324" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M13.5988 10.3583V9.76324" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12.7131 12.72V12.125" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10.3514 12.72V12.125" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7.98962 12.72V12.125" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.17041 15.377V14.782" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M11.5322 15.377V14.782" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M15.135 9.62022C16.573 14.5094 11.7061 18.5132 10.4115 18.7721C8.93537 19.0673 6.5736 15.5247 5.98315 14.0485" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10.4115 7.25843C13.3637 6.9632 14.5446 8.73453 14.5446 8.73453" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Segment 5
+                        </div>
+                        </div>
+                </div>
+                <button id="add_segment"><i class="fa fa-plus fa-sm add_icon"></i>  Add a segment</button>
+            </div>
+        </div>
+        <main class="content">
+            <div class="row head_nav">
+                <nav class="navbar navbar-expand navbar-light">
+                    <div class="container-fluid">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="far fa-list-alt"></i>
+                                    <i class="fas fa-chevron-down"></i>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#"><i class="far fa-list-alt"></i> List view</a></li>
+                                    <li><a class="dropdown-item" href="#">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.39062 0.930511C9.39062 0.489886 9.03438 0.133636 8.59375 0.133636H0.90625C0.465625 0.133636 0.109375 0.489886 0.109375 0.930511V8.61801C0.109375 9.05864 0.465625 9.41489 0.90625 9.41489H8.59375C9.03438 9.41489 9.39062 9.05864 9.39062 8.61801V0.930511ZM7.79688 7.82114H1.70312V1.72739H7.79688V7.82114Z" fill="#3C3C3C"/>
+                                            <path d="M19.8906 0.930511C19.8906 0.489886 19.5344 0.133636 19.0938 0.133636H11.4062C10.9656 0.133636 10.6094 0.489886 10.6094 0.930511V8.61801C10.6094 9.05864 10.9656 9.41489 11.4062 9.41489H19.0938C19.5344 9.41489 19.8906 9.05864 19.8906 8.61801V0.930511ZM18.2969 7.82114H12.2031V1.72739H18.2969V7.82114Z" fill="#3C3C3C"/>
+                                            <path d="M9.39062 11.4305C9.39062 10.9899 9.03438 10.6336 8.59375 10.6336H0.90625C0.465625 10.6336 0.109375 10.9899 0.109375 11.4305V19.118C0.109375 19.5586 0.465625 19.9149 0.90625 19.9149H8.59375C9.03438 19.9149 9.39062 19.5586 9.39062 19.118V11.4305ZM7.79688 18.3211H1.70312V12.2274H7.79688V18.3211Z" fill="#3C3C3C"/>
+                                            <path d="M19.8906 11.4305C19.8906 10.9899 19.5344 10.6336 19.0938 10.6336H11.4062C10.9656 10.6336 10.6094 10.9899 10.6094 11.4305V19.118C10.6094 19.5586 10.9656 19.9149 11.4062 19.9149H19.0938C19.5344 19.9149 19.8906 19.5586 19.8906 19.118V11.4305ZM18.2969 18.3211H12.2031V12.2274H18.2969V18.3211Z" fill="#3C3C3C"/>
+                                        </svg> 
+                                        Grid view</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">
+                                    <img width="22px" src="images.png">
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="fa fa-graduation-cap"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="fas fa-cloud-upload-alt"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                  </nav>
+            </div>
+            <div class="row">
+                <div class="all-segment">
+                    <div class="segment-design" id="segment1">
+                        <img class="chicken-img" src="Chicken_icon_05.svg.png">
+                        <span <span class="segments_name">Segment 1</span> <i class="fas fa-chevron-down fa-sm arrow"></i>
+                        <div class="row">
+                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" style="width: 105px; margin: 4% 60px 0 0;">
+                                <rect width="78" height="78" rx="9" fill="white" stroke="#3C3C3C" stroke-width="2"/>
+                                <i class="fa fa-plus fa-sm add_icon" style="position: absolute; width: 15px; height:15px; margin: 70px 0 0 45px; padding: 0;"></i>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="segment-design" id="segment2" style="margin-bottom: 80px;">
+                        <img class="chicken-img" src="Chicken_icon_05.svg.png">
+                        <span <span class="segments_name">Segment 2</span> <i class="fas fa-chevron-down fa-sm arrow"></i>
+                        <div class="row">
+                            <button class="new_table">Add a new table</button>
+                        </div>
+                        <svg width="80" height="80" viewBox="0 0 80 80" fill="none" style="width: 105px; margin: 1% 0 0 0;">
+                            <rect width="78" height="78" rx="9" fill="white" stroke="#EA5A47" stroke-width="2"/>
+                            <img class="chicken-img" src="Chicken_icon_05.svg.png" style="position: absolute; width: 20px; margin: 49px 0 0 -7%; height:25px;  padding: 0;">
+                        </svg>
+                        <span class="text">Newyork-ITeS-11-50</span>
+                        <span class="dot" id="dot2" style="display: inline-block;"></span>
+                        <svg width="80" height="80" viewBox="0 0 80 80" fill="none" style="width: 105px; margin: 1% 0 0 0;">
+                            <rect width="78" height="78" rx="9" fill="white" stroke="#F01875" stroke-width="2"/>
+                        </svg>
+                        <svg width="24" height="31" viewBox="0 0 24 31" fill="none" style="position: absolute; width: 20px; height:25px; margin: 49px 0 0 -7%; padding: 0;">
+                            <path d="M15.8596 24.5938L17.5765 25.4634C19.4203 26.0728 20.3157 22.1127 17.3517 20.7897L16.4144 20.1608L17.9807 20.7897C19.7448 21.6186 21.8015 17.6712 18.2254 15.9419L16.8025 15.6608L19.2981 15.9419C20.8509 16.8595 21.1286 12.9006 18.6935 11.7456L10.7502 10.1563C11.3127 4.71875 11.7502 1.21875 7.7189 0.5C6.4878 0.3125 4.9689 0.5 5.2814 1.75C6.9064 9.0625 3.7189 13.0521 2.8331 13.9774C-0.766145 17.5767 -0.766145 23.4122 2.8331 27.0114C4.39595 28.4792 5.9129 28.375 9.7189 28.375C10.4377 28.375 19.5193 30.6154 19.5193 30.6154C22.9568 31.5216 24.8433 27.8292 22.5308 27.0479L21.7658 26.5235" stroke="black" fill="#FCEA2B"/>
+                        </svg>
+                        <span class="text">Newyork-ITeS-11-50</span>
+                        <span class="dot" id="dot3" style="display: inline-block;"></span>
+                        <svg width="80" height="80" viewBox="0 0 80 80" fill="none" style="width: 105px; margin: 1% 0 0 0;">
+                            <rect width="78" height="78" rx="9" fill="white" stroke="#7718F0" stroke-width="2"/>
+                        </svg>
+                        <svg width="24" height="31" viewBox="0 0 24 31" fill="none" style="position: absolute; width: 20px; height:25px; margin: 49px 0 0 -7%; padding: 0;">
+                            <path d="M15.8596 24.5938L17.5765 25.4634C19.4203 26.0728 20.3157 22.1127 17.3517 20.7897L16.4144 20.1608L17.9807 20.7897C19.7448 21.6186 21.8015 17.6712 18.2254 15.9419L16.8025 15.6608L19.2981 15.9419C20.8509 16.8595 21.1286 12.9006 18.6935 11.7456L10.7502 10.1563C11.3127 4.71875 11.7502 1.21875 7.7189 0.5C6.4878 0.3125 4.9689 0.5 5.2814 1.75C6.9064 9.0625 3.7189 13.0521 2.8331 13.9774C-0.766145 17.5767 -0.766145 23.4122 2.8331 27.0114C4.39595 28.4792 5.9129 28.375 9.7189 28.375C10.4377 28.375 19.5193 30.6154 19.5193 30.6154C22.9568 31.5216 24.8433 27.8292 22.5308 27.0479L21.7658 26.5235" stroke="black" fill="#FCEA2B"/>
+                        </svg>
+                        <span class="text">Newyork-ITeS-11-50</span>
+                        <span class="dot" id="dot4" style="display: inline-block;"></span>
+                        <svg width="80" height="80" viewBox="0 0 80 80" fill="none" style="width: 105px; margin: 1% 0 0 0;">
+                            <rect width="78" height="78" rx="9" fill="white" stroke="#1BB157" stroke-width="2"/>
+                        </svg>
+                        <svg width="24" height="31" viewBox="0 0 24 31" fill="none" style="position: absolute; width: 20px; height:25px; margin: 49px 0 0 -7%; padding: 0;">
+                            <path d="M15.8596 24.5938L17.5765 25.4634C19.4203 26.0728 20.3157 22.1127 17.3517 20.7897L16.4144 20.1608L17.9807 20.7897C19.7448 21.6186 21.8015 17.6712 18.2254 15.9419L16.8025 15.6608L19.2981 15.9419C20.8509 16.8595 21.1286 12.9006 18.6935 11.7456L10.7502 10.1563C11.3127 4.71875 11.7502 1.21875 7.7189 0.5C6.4878 0.3125 4.9689 0.5 5.2814 1.75C6.9064 9.0625 3.7189 13.0521 2.8331 13.9774C-0.766145 17.5767 -0.766145 23.4122 2.8331 27.0114C4.39595 28.4792 5.9129 28.375 9.7189 28.375C10.4377 28.375 19.5193 30.6154 19.5193 30.6154C22.9568 31.5216 24.8433 27.8292 22.5308 27.0479L21.7658 26.5235" stroke="black" fill="#FCEA2B"/>
+                        </svg>
+                        <span class="text">Newyork-ITeS-11-50</span>
+                        <span class="dot" id="dot5" style="display: inline-block;"></span>
+                        <svg width="90" height="90" viewBox="0 0 90 90" fill="none" style="width: 105px; margin: 2% 0 0 0;">
+                            <g filter="url(#filter0_d)">
+                            <rect x="5.00012" width="80" height="80" rx="10" fill="white"/>
+                            <rect x="6.00012" y="1" width="78" height="78" rx="9" stroke="#334BFA" stroke-width="2"/>
+                            </g>
+                            <defs>
+                                <filter id="filter0_d" x="0.00012207" y="0" width="90" height="90" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+                                    <feOffset dy="5"/>
+                                    <feGaussianBlur stdDeviation="2.5"/>
+                                    <feColorMatrix type="matrix" values="0 0 0 0 0.2 0 0 0 0 0.294118 0 0 0 0 0.980392 0 0 0 0.25 0"/>
+                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                                </filter>
+                            </defs>
+                            <i class="fa fa-plus fa-sm add_icon" style="position: absolute; color: #334BFA; width: 15px; height:15px; margin: 52px 0 0 -6.5%; padding: 0;"></i>
+                        </svg>
+                    </div>
+                    <div class="segment-design" id="segment3">
+                        <img class="chicken-img" src="Chicken_icon_05.svg.png">
+                        <span <span class="segments_name">Segment 3</span> <i class="fas fa-chevron-down fa-sm arrow"></i>
+                        <div class="row">
+                            <div class="col-5" style="margin: 5px;">
+                                <svg width="18" height="20" viewBox="0 0 18 20" fill="none" style="width: 50px; margin: 0;">
+                                    <path d="M10.0617 9.03383L11.1752 3.02188C11.6776 0.869077 9.59385 0.240188 9.05991 2.52824L8.04363 7.87152C7.82305 8.86619 7.51985 9.29969 7.13471 9.47299C6.47363 9.77052 5.86519 8.80441 5.58085 8.13752L4.11066 4.68947C3.21171 2.73719 1.40457 3.65294 2.12799 5.45138L4.14977 10.0398L3.79194 9.21541L2.91324 7.18947C2.14069 5.56038 0.482685 6.21141 1.02088 7.82599C1.02088 7.82599 2.22469 10.7878 2.5776 11.793C3.03774 13.1037 3.50843 15.9101 4.22663 17.0991C5.78949 19.6866 9.95121 19.3516 11.9672 17.0991C12.534 16.4659 13.533 15.0861 14.0906 14.4448C14.8652 13.5538 16.8921 11.2406 16.8921 11.2406C17.2985 10.6411 16.9833 9.71455 16.6697 9.94269L12.5892 11.44C12.309 11.5342 12.1264 11.3123 12.0086 11.1356C11.9227 11.0068 12.0331 10.5653 12.066 10.366C12.4548 8.19552 12.8435 6.02508 13.2324 3.85461C13.5643 2.20102 11.533 1.59338 11.1283 3.29533" fill="#FCEA2B" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span style="position: relative;">Newyork-ITeS-11-50</span>
+                            </div>
+                            <div class="col-5" style="margin: 5px;">
+                                <svg width="18" height="20" viewBox="0 0 18 20" fill="none" style="width: 50px; margin: 0;">
+                                    <path d="M10.0617 9.03383L11.1752 3.02188C11.6776 0.869077 9.59385 0.240188 9.05991 2.52824L8.04363 7.87152C7.82305 8.86619 7.51985 9.29969 7.13471 9.47299C6.47363 9.77052 5.86519 8.80441 5.58085 8.13752L4.11066 4.68947C3.21171 2.73719 1.40457 3.65294 2.12799 5.45138L4.14977 10.0398L3.79194 9.21541L2.91324 7.18947C2.14069 5.56038 0.482685 6.21141 1.02088 7.82599C1.02088 7.82599 2.22469 10.7878 2.5776 11.793C3.03774 13.1037 3.50843 15.9101 4.22663 17.0991C5.78949 19.6866 9.95121 19.3516 11.9672 17.0991C12.534 16.4659 13.533 15.0861 14.0906 14.4448C14.8652 13.5538 16.8921 11.2406 16.8921 11.2406C17.2985 10.6411 16.9833 9.71455 16.6697 9.94269L12.5892 11.44C12.309 11.5342 12.1264 11.3123 12.0086 11.1356C11.9227 11.0068 12.0331 10.5653 12.066 10.366C12.4548 8.19552 12.8435 6.02508 13.2324 3.85461C13.5643 2.20102 11.533 1.59338 11.1283 3.29533" fill="#FCEA2B" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span style="position: relative;">Newyork-ITeS-11-50</span>
+                            </div>
+                            <div class="col-5" style="margin: 5px;">
+                                <svg width="18" height="20" viewBox="0 0 18 20" fill="none" style="width: 50px; margin: 0;">
+                                    <path d="M10.0617 9.03383L11.1752 3.02188C11.6776 0.869077 9.59385 0.240188 9.05991 2.52824L8.04363 7.87152C7.82305 8.86619 7.51985 9.29969 7.13471 9.47299C6.47363 9.77052 5.86519 8.80441 5.58085 8.13752L4.11066 4.68947C3.21171 2.73719 1.40457 3.65294 2.12799 5.45138L4.14977 10.0398L3.79194 9.21541L2.91324 7.18947C2.14069 5.56038 0.482685 6.21141 1.02088 7.82599C1.02088 7.82599 2.22469 10.7878 2.5776 11.793C3.03774 13.1037 3.50843 15.9101 4.22663 17.0991C5.78949 19.6866 9.95121 19.3516 11.9672 17.0991C12.534 16.4659 13.533 15.0861 14.0906 14.4448C14.8652 13.5538 16.8921 11.2406 16.8921 11.2406C17.2985 10.6411 16.9833 9.71455 16.6697 9.94269L12.5892 11.44C12.309 11.5342 12.1264 11.3123 12.0086 11.1356C11.9227 11.0068 12.0331 10.5653 12.066 10.366C12.4548 8.19552 12.8435 6.02508 13.2324 3.85461C13.5643 2.20102 11.533 1.59338 11.1283 3.29533" fill="#FCEA2B" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span style="position: relative;">Newyork-ITeS-11-50</span>
+                            </div>
+                            <div class="col-5" style="margin: 5px;">
+                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" style="position: absolute; width: 50px; margin: 0;">
+                                    <rect x="0.0847168" y="-0.00012207" width="20" height="20" rx="5" fill="white"/>
+                                    <rect x="0.584717" y="0.499878" width="19" height="19" rx="4.5" stroke="#3C3C3C" stroke-opacity="0.7"/>
+                                    <i class="fa fa-plus fa-sm add_icon" style="position: absolute; width: 15px; height:15px; margin: 3px 0 0 18px; padding: 0; color: rgba(60, 60, 60, 0.7);"></i>
+                                </svg>
+                                <span style="position: absolute; margin: 0 0 0 55px;">Add a table</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>
